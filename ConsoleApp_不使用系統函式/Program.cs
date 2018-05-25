@@ -14,9 +14,9 @@ namespace ConsoleApp_不使用系統函式
 
             for(int i = 0; i <= tAry.Length; i++)
             {
-                for(int k = i; k <= tAry.Length; k++)
+                for(int k = i+1; k <= tAry.Length; k++)
                 {
-                    if(k > i)
+                   if(k > i)
                     {
                         Console.WriteLine($"{k}");
                     }

@@ -21,8 +21,7 @@ namespace ConsoleApp_不使用系統函式
                     {
                         temp = tAry[k];
                         tAry[k] = tAry[i];
-                        tAry[i] = temp;
-                        
+                        tAry[i] = temp;                        
                     }
                 }
                 Console.WriteLine($"{tAry[i]}");

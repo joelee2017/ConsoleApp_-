@@ -10,19 +10,24 @@ namespace ConsoleApp_不使用系統函式
     {
         static void Main(string[] args)
         {
+            int temp = 0;
             int[] tAry = new int[] { 7, 1, 8, 10, 3, 5, 2, 11, 6, 4, 9 };
 
-            for(int i = 0; i <= tAry.Length; i++)
+            for(int i = 0; i < tAry.Length; i++)
             {
-                for(int k = i+1; k <= tAry.Length; k++)
+                for(int k = i +1 ; k < tAry.Length; k++)
                 {
-                   if(k > i)
+                   if(tAry[i] > tAry[k])
                     {
-                        Console.WriteLine($"{k}");
+                        temp = tAry[k];
+                        tAry[k] = tAry[i];
+                        tAry[i] = temp;
+                        
                     }
                 }
-                Console.ReadLine();
+                Console.WriteLine($"{tAry[i]}");
             }
+            Console.ReadKey();
         }
     }
 }
